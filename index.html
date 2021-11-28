@@ -2,12 +2,43 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<script src="main.js"></script>
+<script src="index.js"></script>
+<LINK REL=StyleSheet HREF="styling.css" TYPE="text/css" MEDIA=screen>
 <body>
-  <div>
-    <div id="value">_____</div>
-    <button onclick="getValue()">Click here for a new value</button>
-    <br/>
 
+    <div class="row"><div class="box" id="box-1"></div><div class="box" id="box-2"></div><div class="box" id="box-3"></div><div class="box" id="box-4"></div></div>
+    <div class="row"><div class="box" id="box-5"></div><div class="box" id="box-6"></div><div class="box" id="box-7"></div><div class="box" id="box-8"></div></div>
+    <div class="row"><div class="box" id="box-9"></div><div class="box" id="box-10"></div><div class="box" id="box-11"></div><div class="box" id="box-12"></div></div>
+    <div class="row"><div class="box" id="box-13"></div><div class="box" id="box-14"></div><div class="box" id="box-15"></div><div class="box" id="box-16"></div></div>
+<br/><br/>
+  <div>
+    <input type="number" id="input-1"></input><input type="number" id="input-2"></input><input type="number" id="input-3"></input></input><input type="number" id="input-4"></input>
+    <br/>
+    <input type="number" id="input-5"></input><input type="number" id="input-6"></input><input type="number" id="input-7"></input></input><input type="number" id="input-8"></input>
+    <br/>
+    <input type="number" id="input-9"></input><input type="number" id="input-10"></input><input type="number" id="input-11"></input></input><input type="number" id="input-12"></input>
+    <br/>
+    <input type="number" id="input-13"></input><input type="number" id="input-14"></input><input type="number" id="input-15"></input></input><input type="number" id="input-16"></input>
+    <br/>
+    <button onclick = "redraw()">Draw the 4x4 pixel image</button>
   </div>
 </body>
+
+
+<script>
+function redraw(){
+  for(var i = 1; i <= 16; i++){
+    var identityString = "input-"+i
+    var boxName = "box-"+i
+    if(parseInt(document.getElementById(identityString).value) != 0){
+      console.log(parseInt(document.getElementById(identityString).value))
+
+
+      console.log(boxName)
+      document.getElementById(boxName).style.backgroundColor = "black"
+    } else {
+      document.getElementById(boxName).style.backgroundColor = "white"
+    }
+  }
+}
+</script>

@@ -1,0 +1,24 @@
+.box{
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  border-color: black;
+  border: 1px solid black;
+}
+
+.row{
+  padding: 0px;
+  margin: 0px;
+  font-size: 0;
+}
+
+body{  padding: 0;
+  margin: 0;}
+
+  input{
+    margin: 5px;
+    width: 40px;
+  }
